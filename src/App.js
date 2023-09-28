@@ -1,6 +1,6 @@
 import './App.css';
 import './Reset.css';
-import Menu from './components/menu/Menu';
+// import Menu from './components/menu/Menu';
 
 function App() {
   return (
