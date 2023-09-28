@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+:root {
+  --blue: #4301FF;
+  --background-white: #FFF;
+  --background-box-white: #F5F6FA;
+  --stroke-box-white: #F7F7F8;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background-box-white);
+  font-family: 'Sora', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+div.container {
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+div.container .content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100vw;
+  height: 100vh;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: Sora;
+  font-weight: 400;
+  src: url('../public/fonts/Sora/Sora-Regular.ttf'), format('woff');
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: Sora;
+  font-weight: 800;
+  src: url('../public/fonts/Sora/Sora-Bold.ttf'), format('woff');
+}
+
+@font-face {
+  font-family: Syne;
+  font-weight: 400;
+  src: url('../public/fonts/Syne/Syne-Regular.ttf'), format('woff');
+}
+
+@font-face {
+  font-family: Syne;
+  font-weight: 800;
+  src: url('../public/fonts/Syne/Syne-Bold.ttf'), format('woff');
 }
