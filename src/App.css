@@ -1,26 +1,18 @@
 :root {
-  --blue: #4301FF;
+  --blue: #7342FF;
   --background-white: #FFF;
   --background-box-white: #F5F6FA;
-  --stroke-box-white: #F7F7F8;
+  --stroke-box-white: #E2E2E2;
+  --principal-font: 'Sora', sans-serif;
+  --secondary-font: 'Syne', sans-serif;
 }
 
-body {
-  background-color: var(--background-box-white);
-  font-family: 'Sora', sans-serif;
-}
-
-div.container {
+div.main {
   width: 100%;
   height: 100%;
-}
-
-div.container .content {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+  background-color: #F5F6FA;
+  font-family: var(--principal-font);
+  height: 100%;
 }
 
 @font-face {
