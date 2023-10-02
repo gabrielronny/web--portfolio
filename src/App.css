@@ -7,14 +7,53 @@
   --secondary-font: 'Syne', sans-serif;
 }
 
-div.main {
-  width: 100%;
-  height: 100%;
-  background-color: #F5F6FA;
+body {
   font-family: var(--principal-font);
-  height: 100%;
 }
 
+main.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 300px 0 300px;
+}
+
+section.welcome-message {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section.welcome-message div.message {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+section.welcome-message div.message span {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+section.welcome-message div.message span:nth-child(1) {
+  font-size: 1rem;
+}
+section.welcome-message div.message span:nth-child(2)  {
+  font-size: 2rem;
+  font-weight: 800;
+}
+section.welcome-message div.message span:nth-child(3)  {
+  font-family: Syne;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+
+
+/* Config for fonts */
 @font-face {
   font-family: Sora;
   font-weight: 400;
