@@ -21,6 +21,7 @@ div.container .content {
   height: 100vh;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 @font-face {
