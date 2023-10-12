@@ -2,15 +2,15 @@ import './Menu.css';
 import { BiMenu, BiX } from "react-icons/bi";
 import React, { useState } from 'react';
 
-function Menu() {
+
+export default function Menu() {
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   }
-
-
+  
   return (
     <header className="nav-container">
       <nav className="nav-content">
@@ -19,16 +19,17 @@ function Menu() {
         </div>
         <ul className={`nav-list ${menuOpen ? 'active': ''}`}>
           <li><a href="#">Quem Sou</a></li>
-          <li><a href="#">Minha Experiência</a></li>
-          <li><a href="#">Projetos</a></li>
-          <li><a href="../../assets/files/cv-gabriel-ronny.pdf" download>Baixar CV</a></li>
+          <li><a href="#">Seviços</a></li>
+          <li><a href="#">Feedbacks</a></li>
+          <li><a href="#">Contato</a></li>
+          {/* <li><a href="../../assets/files/cv-gabriel-ronny.pdf" download>Baixar CV</a></li> */}
         </ul>
         <button 
           className={`nav-button ${menuOpen ? 'active' : ''}`}
           onClick={toggleMenu}
         >
           {
-            menuOpen ? <BiX size="32" color="#000"/> : <BiMenu  size="32" color="#000"/>
+            menuOpen ? <BiX size="32" color="#FFF"/> : <BiMenu  size="32" color="#FFF"/>
           }      
         </button>
       </nav>
@@ -36,4 +37,3 @@ function Menu() {
   );
 }
 
-export default Menu;

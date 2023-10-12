@@ -1,25 +1,10 @@
 import './Reset.css';
 import './App.css';
-import Menu from './components/menu/Menu';
-import CoffeImage from './assets/img/coffe.svg';
+import RoutesApp from './routes';
 
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Menu />
-      <main className="main">
-        <section className="welcome-message">
-          <div className="message">
-            <span className="">Olá, sou o</span>
-            <span>Gabriel Ronny</span>
-            <span>Data Engineer + Backend Developer</span>
-          </div>
-          <img src={CoffeImage} alt="cícara com café" />
-        </section>
-      </main>
-    </div>
+    <RoutesApp />
   );
 }
-
-export default App;

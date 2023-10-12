@@ -7,11 +7,10 @@ export default function Home() {
       <Menu />
       <main className="main">
         <section className="welcome-message">
-          <div className="message">
             <span className="">👋 Olá, sou o</span>
             <span>Gabriel Ronny</span>
             <span>Data Engineer + Backend Developer</span>
-          </div>
+            <span>Desenvolvendo soluções para o seu negócio</span>
           {/* <img src={CoffeImage} alt="xícara com café" /> */}
         </section>
       </main>

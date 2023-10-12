@@ -2,9 +2,11 @@
   --blue: #7342FF;
   --background-white: #FFF;
   --background-box-white: #F5F6FA;
+  --color-black: #212121;
   --stroke-box-white: #E2E2E2;
+  --stroke-box-black: #2E2E2E;
   --principal-font: 'Sora', sans-serif;
-  --secondary-font: 'Syne', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
 }
 
 body {
@@ -13,43 +15,52 @@ body {
 
 main.main {
   position: relative;
-  width: 100%;
-  height: 100%;
-  padding: 0 300px 0 300px;
+  width: 100vw;
+  height: 100vh;
 }
 
 section.welcome-message {
-  position: relative;
   display: flex;
   width: 100%;
-  height: 70vh;
-  justify-content: space-between;
-  align-items: center;
-}
-
-section.welcome-message div.message {
-  display: flex;
+  height: 70%; 
+  position: relative;
+  top: 70px;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
-  line-height: 2rem;
+  padding: 0 20% 0 20%;
+  background-color: var(--color-black);
+  background-image: url(assets/img/background-bobbles.svg);
+  /* background-repeat: no-repeat; */
+  gap: 0.5rem;
 }
 
-section.welcome-message div.message span {
+section.welcome-message span {
   font-size: 1.2rem;
   font-weight: 400;
+  color: #FFF;
 }
 
-section.welcome-message div.message span:nth-child(1) {
+section.welcome-message span:nth-child(1) {
   font-size: 1rem;
 }
-section.welcome-message div.message span:nth-child(2)  {
+section.welcome-message span:nth-child(2)  {
   font-size: 2rem;
   font-weight: 800;
 }
-section.welcome-message div.message span:nth-child(3)  {
+section.welcome-message span:nth-child(3)  {
   font-family: Syne;
   color: var(--blue);
-  font-weight: 800;
+  font-weight: 400;
 }
+
+section.welcome-message span:nth-child(4)  {
+  font-family: Syne;
+  color: #B9B9B9;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
 
 
 
@@ -66,14 +77,3 @@ section.welcome-message div.message span:nth-child(3)  {
   src: url('../public/fonts/Sora/Sora-Bold.ttf'), format('woff');
 }
 
-@font-face {
-  font-family: Syne;
-  font-weight: 400;
-  src: url('../public/fonts/Syne/Syne-Regular.ttf'), format('woff');
-}
-
-@font-face {
-  font-family: Syne;
-  font-weight: 800;
-  src: url('../public/fonts/Syne/Syne-Bold.ttf'), format('woff');
-}
