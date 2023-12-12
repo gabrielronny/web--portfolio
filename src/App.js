@@ -1,18 +1,10 @@
-import './App.css';
 import './Reset.css';
-// import Menu from './components/menu/Menu';
+import './App.css';
+import RoutesApp from './routes';
 
-function App() {
+
+export default function App() {
   return (
-    <div className="App">
-      {/* <Menu /> */}
-      <div className="container">
-        <div className="content">
-          <span>Olá, estamos construindo o futuro para seu negócio</span>
-        </div>
-      </div>
-    </div>
+    <RoutesApp />
   );
 }
-
-export default App;

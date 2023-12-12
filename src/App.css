@@ -1,22 +1,20 @@
 :root {
-  --blue: #4301FF;
+  --blue: #7342FF;
   --background-white: #FFF;
   --background-box-white: #F5F6FA;
-  --stroke-box-white: #F7F7F8;
+  --color-black: #212121;
+  --stroke-box-white: #E2E2E2;
+  --stroke-box-black: #2E2E2E;
+  --principal-font: 'Sora', sans-serif;
+  --secondary-font: 'Poppins', sans-serif;
 }
 
 body {
-  background-color: var(--background-box-white);
-  font-family: 'Sora', sans-serif;
+  font-family: var(--principal-font);
 }
 
-div.container {
-  width: 100%;
-  height: 100%;
-}
-
-div.container .content {
-  display: flex;
+main.main {
+  position: relative;
   width: 100vw;
   height: 100vh;
   justify-content: center;
@@ -24,6 +22,59 @@ div.container .content {
   text-align: center;
 }
 
+section.welcome-message {
+  display: flex;
+  width: 100%;
+  height: 100%; 
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 0 50% 0 50%; */
+  background-color: var(--color-black);
+  /* background-image: url(assets/img/background-bobbles.svg); */
+  /* background-repeat: no-repeat; */
+  gap: 0.5rem;
+}
+
+section.welcome-message div.content-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+section.welcome-message span {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #FFF;
+  text-align: left;
+}
+
+section.welcome-message span:nth-child(1) {
+  font-size: 1rem;
+}
+section.welcome-message span:nth-child(2)  {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+section.welcome-message span:nth-child(3)  {
+  font-family: Syne;
+  color: var(--blue);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+section.welcome-message span:nth-child(4)  {
+  font-family: Syne;
+  color: #B9B9B9;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+
+
+/* Config for fonts */
 @font-face {
   font-family: Sora;
   font-weight: 400;
@@ -37,13 +88,14 @@ div.container .content {
 }
 
 @font-face {
-  font-family: Syne;
+  font-family: Poppins;
   font-weight: 400;
-  src: url('../public/fonts/Syne/Syne-Regular.ttf'), format('woff');
+  src: url('../public/fonts/Poppins/Poppins-Regular.ttf'), format('woff');
 }
 
 @font-face {
-  font-family: Syne;
+  font-family: Poppins;
   font-weight: 800;
-  src: url('../public/fonts/Syne/Syne-Bold.ttf'), format('woff');
+  src: url('../public/fonts/Poppins/Poppins-Bold.ttf'), format('woff');
 }
+
